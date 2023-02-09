@@ -23,10 +23,13 @@ header {
    padding: 45px 0;
 }
 
+h1,h3 {
+   margin: 0;
+}
+
 h1 {
    color: whitesmoke;
    font-size: 36px;
-   margin: 0;
 }
 
 h2 {
@@ -36,7 +39,6 @@ h2 {
 
 h3 {
    color: whitesmoke;
-   margin: 0;
 }
 
 a {
@@ -84,7 +86,11 @@ main {
    transform: scale(105%);
    box-shadow: #C66136 0px 5px 5px 1px;
 }
-
+@media only screen and (max-width: 768px) {
+   #title-section-two {
+      text-align: center;
+   }
+}
 
 
 .container {
