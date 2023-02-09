@@ -72,6 +72,12 @@ main {
    
 }
 
+.text-container {
+   display: flex;
+   gap: 1em;
+   flex-wrap:
+}
+
 
 
 .section-two-img {
@@ -103,6 +109,7 @@ main {
    color: whitesmoke;
    margin-bottom: 0;
 }
+
 
 .img-div {
    display: flex;
@@ -171,4 +178,15 @@ footer {
    80% { transform: translate(-1px, -1px) rotate(1deg); }
    90% { transform: translate(1px, 2px) rotate(0deg); }
    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.container-one {
+   border: solid 1px white;
+   width: 750px;
+   margin: 0 auto;
+   color: white;
+   background-color: #081e23b8;
+   padding: 25px 25px;
+   border-radius: 5px;
 }
