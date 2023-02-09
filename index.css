@@ -1,0 +1,148 @@
+/* 
+Challenge:
+1. Create a body selector.
+2. Set the base font size and text color to 
+   the values given on the slide.
+3. Bring in "Roboto" from Google Fonts and 
+   set it as the default font. Make sure 
+   browsers will fall back on a sans-serif 
+   font if Roboto is unavailable.
+4. Override HTML's default margin.
+*/
+ 
+body {
+   color: #1A0C0D;
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   background: linear-gradient(to bottom, #FCA93A, #C66136);
+
+}
+
+header {
+   background-color: #1A0C0D;
+   padding: 45px 0;
+}
+
+h1 {
+   color: whitesmoke;
+   font-size: 36px;
+   margin: 0;
+}
+
+h2 {
+   margin-top: 0;
+}
+ 
+
+h3 {
+   color: whitesmoke;
+   margin: 0;
+}
+
+a {
+   color: whitesmoke;
+   text-decoration: underline dotted;
+}
+
+a:hover {
+   color: #081e23
+}
+
+section  {
+   padding: 45px 0;
+}
+
+main {
+   margin: 0%;
+}
+
+#section-one-img {
+   width: 100%;
+   border-radius: 10px;
+
+   
+}
+
+.section-two-img {
+   width: 300px;
+   border-radius: 4.6px;
+   transition: 0.25s;
+}
+
+.section-two-img:hover {
+   width: 300px;
+   border-radius: 4.6px;
+   transform: scale(105%);
+   box-shadow: #C66136 0px 5px 5px 1px;
+}
+
+
+
+.container {
+   width: 620px;
+   margin: 0 auto;
+}
+
+.section-two {
+   background-color: #1A0C0D;
+   color: whitesmoke;
+   margin-bottom: 0;
+}
+
+.img-div {
+   display: flex;
+   justify-content: center;
+}
+
+
+.wiggle:hover, #section-one-img:hover  {
+   animation: wiggle 1s linear infinite;
+}
+
+.img-container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   
+}
+
+footer {
+   background-color: white;
+   color: #C66136;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 0%;
+}
+
+#footer-text {
+   padding: 50px 0px;
+   margin: 0%;
+}
+ 
+@keyframes wiggle {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+   10% { transform: translate(-1px, -2px) rotate(-1deg); }
+   20% { transform: translate(-3px, 0px) rotate(1deg); }
+   30% { transform: translate(3px, 2px) rotate(0deg); }
+   40% { transform: translate(1px, -1px) rotate(1deg); }
+   50% { transform: translate(-1px, 2px) rotate(-1deg); }
+   60% { transform: translate(-3px, 1px) rotate(0deg); }
+   70% { transform: translate(3px, 1px) rotate(-1deg); }
+   80% { transform: translate(-1px, -1px) rotate(1deg); }
+   90% { transform: translate(1px, 2px) rotate(0deg); }
+   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes section-one-img {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+   10% { transform: translate(-1px, -2px) rotate(-1deg); }
+   20% { transform: translate(-3px, 0px) rotate(1deg); }
+   30% { transform: translate(3px, 2px) rotate(0deg); }
+   40% { transform: translate(1px, -1px) rotate(1deg); }
+   50% { transform: translate(-1px, 2px) rotate(-1deg); }
+   60% { transform: translate(-3px, 1px) rotate(0deg); }
+   70% { transform: translate(3px, 1px) rotate(-1deg); }
+   80% { transform: translate(-1px, -1px) rotate(1deg); }
+   90% { transform: translate(1px, 2px) rotate(0deg); }
+   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
