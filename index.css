@@ -75,7 +75,7 @@ main {
 .text-container {
    display: flex;
    gap: 1em;
-   flex-wrap:
+   flex-wrap: wrap;
 }
 
 
@@ -183,7 +183,7 @@ footer {
 
 .container-one {
    border: solid 1px white;
-   width: 750px;
+   max-width: 750px;
    margin: 0 auto;
    color: white;
    background-color: #081e23b8;
