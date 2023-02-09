@@ -52,6 +52,13 @@ section  {
    padding: 45px 0;
 }
 
+@media only screen and (max-width: 768px) {
+   section {
+      padding: 45px 10px
+      ;
+   }
+}
+
 main {
    margin: 0%;
 }
@@ -62,6 +69,8 @@ main {
 
    
 }
+
+
 
 .section-two-img {
    width: 300px;
@@ -79,7 +88,7 @@ main {
 
 
 .container {
-   width: 620px;
+   max-width: 620px;
    margin: 0 auto;
 }
 
@@ -95,6 +104,8 @@ main {
 }
 
 
+
+
 .wiggle:hover, #section-one-img:hover  {
    animation: wiggle 1s linear infinite;
 }
@@ -104,6 +115,15 @@ main {
    justify-content: space-between;
    flex-wrap: wrap;
    
+}
+
+@media only screen and (max-width: 768px) {
+   .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+   }
 }
 
 footer {
