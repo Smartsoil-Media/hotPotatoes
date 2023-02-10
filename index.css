@@ -46,7 +46,7 @@ section  {
 p {
    line-height: 23px;
 }
-
+    
 @media only screen and (max-width: 768px) {
    section {
       padding: 45px 15px
