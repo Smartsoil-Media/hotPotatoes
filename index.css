@@ -8,7 +8,8 @@ body {
 
 header {
    background-color: #1A0C0D;
-   padding: 45px 0;
+   padding: 45px 10px;
+
 }
 
 h1,h3 {
@@ -27,6 +28,19 @@ h2 {
 
 h3 {
    color: whitesmoke;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.125rem;
+   padding: 0.8em 0px;
+}
+
+ul {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
 }
 
 a {
@@ -212,3 +226,54 @@ footer {
    border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+   header {
+text-align: center;
+   }
+   nav {
+margin-bottom: 15px;
+   }
+   li:not(:last-child) {
+      border-bottom: 1px dotted #a190b6;
+   }
+   
+}
+
+@media (min-width: 768px) {
+   header,
+   section {
+       padding: 2.875em 0;        
+   }
+
+   header .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.25rem;
+   }
+   
+   nav ul {
+       display: flex;
+       gap: 1rem;
+   }
+   
+   .btn {
+       display: inline-block;
+       margin-right: 0.5em;
+   }
+   
+   h1 {
+       font-size: 2.25rem;
+   }
+   
+   h2 {
+       font-size: 1.75rem;
+   }
+   
+   .subheading {
+       font-size: 1.25rem;
+   }
+   
+   p {
+       font-size: 1.125rem;
+   }
+}
